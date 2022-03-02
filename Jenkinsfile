@@ -16,7 +16,7 @@ node {
 	stage('aaa Integration') {
 		echo "aaa Integration"
 	}
-	stage('bbb Integration') {
-		echo "bbb Integration"
+	stage('UAT Integration') {
+		echo "UAT Integration"
 	}
 }
