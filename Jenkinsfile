@@ -12,8 +12,8 @@ node {
 	stage('Prod Integration') {
 		echo "Prod Integration"
 	}
-	
-	stage('Dev Integration') {
-		echo "Dev Integration"
+
+	stage('Dev New Integration') {
+		echo "Dev New Integration"
 	}
 }
