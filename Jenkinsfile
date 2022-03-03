@@ -1,21 +1,24 @@
  pipeline {
     agent any
     stages {
-        stage('Example Stage 1') {
+        stage('Build') {
             steps {
                 parallel(
-                        "step 1": { echo "hello" },
-                        "step 2": { echo "world" },
-                        "step 3": { echo "world" }
+                        "step 1": { echo "Build" },
                 )
             }
         }
-        stage('Example Stage 2') {
+        stage('Test') {
             steps {
                 parallel(
-                        "step 1": { echo "hello" },
-                        "step 2": { echo "world" },
-                        "step 3": { echo "world" }
+                        "step 1": { echo "Test" },
+                )
+            }
+        }
+		stage('Integration Test') {
+            steps {
+                parallel(
+                        "step 1": { echo "Integration Test" },
                 )
             }
         }
