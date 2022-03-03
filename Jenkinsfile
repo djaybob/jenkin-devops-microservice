@@ -9,12 +9,12 @@
         }
         stage('Test') {
             steps {
-                "step 1": { echo "Test" }
+                echo "Test"
             }
         }
 		stage('Integration Test') {
             steps {
-              	"step 1": { echo "Integration Test" }
+              	echo "Integration Test"
             }
         }
     }
