@@ -19,4 +19,5 @@ node {
 	stage('UAT Integration') {
 		echo "UAT Integration"
 	}
+	
 }
