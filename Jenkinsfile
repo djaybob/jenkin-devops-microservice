@@ -1,15 +1,26 @@
-node {
-	stage('Build') {
-		echo "Build"
-	}
-	stage('Test') {
-		echo "Test"
-	}
-	stage('Test Integration') {
-		echo "Test Integration"
-	}
 
-	stage('Prod Integration') {
-		echo "Prod Integration"
+pipeline {
+	agent any
+	stages {
+		stage('Build'){
+			echo "Build"
+		}
+		stage('Test'){
+			echo "Test"
+		}
+		stage('Integration Test'){
+			echo "Integration Test"
+		}
+	}
+	post {
+		always {
+			echo "always"
+		}
+		success {
+			echo "success"
+		}
+		failure {
+			echo "failure"
+		}
 	}
 }
