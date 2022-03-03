@@ -1,11 +1,10 @@
  pipeline {
-    agent any
-    stages {
+    //agent any
+    agent { docker { image 'maven:3.6.3'} }
+	stages {
         stage('Build') {
             steps {
-                parallel(
-                        "step 1": { echo "Build" },
-                )
+                sh "mvn --version"
             }
         }
         stage('Test') {
