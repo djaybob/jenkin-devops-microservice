@@ -1,26 +1,23 @@
-
-pipeline {
-	agent any
-	stages {
-		stage('Build'){
-			echo "Build"
-		}
-		stage('Test'){
-			echo "Test"
-		}
-		stage('Integration Test'){
-			echo "Integration Test"
-		}
-	}
-	post {
-		always {
-			echo "always"
-		}
-		success {
-			echo "success"
-		}
-		failure {
-			echo "failure"
-		}
-	}
+ pipeline {
+    agent any
+    stages {
+        stage('Example Stage 1') {
+            steps {
+                parallel(
+                        "step 1": { echo "hello" },
+                        "step 2": { echo "world" },
+                        "step 3": { echo "world" }
+                )
+            }
+        }
+        stage('Example Stage 2') {
+            steps {
+                parallel(
+                        "step 1": { echo "hello" },
+                        "step 2": { echo "world" },
+                        "step 3": { echo "world" }
+                )
+            }
+        }
+    }
 }
