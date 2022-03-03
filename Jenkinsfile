@@ -1,18 +1,4 @@
 node {
-	stage('Build') {
-		echo "Build"
-	}
-	stage('Test') {
-		echo "Test"
-	}
-	stage('Test Integration') {
-		echo "Test Integration"
-	}
-
-	stage('Prod Integration') {
-		echo "Prod Integration"
-	}
-
 	stage('PROD Integration') {
 		echo "PROD Integration"
 	}
