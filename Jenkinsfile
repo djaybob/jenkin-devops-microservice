@@ -4,7 +4,12 @@
 	stages {
         stage('Build') {
             steps {
-				echo "$PATH"
+				echo "Path - $PATH"
+				echo "BUILD_NUMBER - $BUILD_NUMBER"
+				echo "BUILD_ID - $BUILD_ID"
+				echo "JOB_NAME - $JOB_NAME"
+				echo "BUILD_TAG - $BUILD_TAG"
+				echo "BUILD_URL - $BUILD_URL"
             }
         }
         stage('Test') {
