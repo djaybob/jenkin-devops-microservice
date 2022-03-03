@@ -23,4 +23,4 @@ pipeline {
 			echo "failure"
 		}
 	}
-}
+
