@@ -18,6 +18,4 @@ node {
 		echo "PROD6 Integration"
 	}
 
-
-
 }
