@@ -1,4 +1,4 @@
-node {
+pipeline {
 		echo "PROD Integration"
 		echo "PROD2 Integration"
 		echo "PROD3 Integration"
