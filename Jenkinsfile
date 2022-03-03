@@ -18,7 +18,7 @@
             }
         }
     }
-	
+
 	post {
 		always {
 			echo "always"
