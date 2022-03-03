@@ -4,8 +4,8 @@
 	stages {
         stage('Build') {
             steps {
-                sh "sudo usermod -a -G docker jenkins"
                 sh "mvn --version"
+				echo "Build"
             }
         }
         stage('Test') {
