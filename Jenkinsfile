@@ -19,7 +19,6 @@
             }
         }
     }
-
 	post {
 		always {
 			echo "always"
